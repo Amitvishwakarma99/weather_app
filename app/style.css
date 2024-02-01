@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Overlock:wght@400;700;900&display=swap");
+
+body {
+  font-family: "Overlock", serif;
+  font-size: 16px; /* Adjusting base font size for better readability */
+  line-height: 1.6; /* Setting line height for better spacing */
+  background: url(../imgs/1.jpg) no-repeat center center fixed;
+  background-size: cover;
+  color: rgb(255, 255, 255);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+p {
+  color: rgba(236, 236, 236, 0.813);
+}
+.maincard {
+  width: 90%;
+  max-width: 800px;
+  max-height: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00000037, #cdcdcd00);
+  text-align: center;
+  box-shadow: 2px 4px 20px 0 rgba(0, 0, 0, 0.767);
+  border: 1px solid rgba(255, 255, 255, 0.265);
+  backdrop-filter: blur(5px);
+  overflow: hidden;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.city {
+  height: 50px;
+  flex-grow: 1;
+  outline: none;
+  border-radius: 30px 0px 0px 30px;
+  border: none;
+  color: rgb(209, 209, 209);
+  background-color: transparent;
+  font-size: large;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.city::placeholder {
+  color: #ccc; /* Styling placeholder text */
+}
+
+.btn {
+  align-self: normal;
+  margin-left: -2px;
+  padding: 0px 30px;
+  border-radius: 0px 30px 30px 0px;
+  border: 0;
+  cursor: pointer;
+  background-color: #d3c5e5e7;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.maindetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+.maindetails img {
+  width: 30%;
+}
+.thermometer {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.maindetails p {
+  margin-top: -15px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
+}
+.temprature {
+  font-size: 36px; /* Increase font size for temperature */
+  margin-bottom: 5px;
+}
+.weatherdetail {
+  text-align: left; /* Adjusted for better alignment */
+}
+.col {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.col img {
+  width: 30%;
+}
+.weather {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .maindetails {
+    flex-direction: column; /* Adjusting layout for smaller screens */
+  }
+
+  .maindetails img {
+    width: 50%; /* Adjusting image size for better responsiveness */
+  }
+
+  .thermometer {
+    width: 70%; /* Adjusting thermometer width for smaller screens */
+  }
+}
