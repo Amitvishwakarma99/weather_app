@@ -103,16 +103,3 @@ p {
 .weather {
   display: none;
 }
-@media only screen and (max-width: 600px) {
-  .maindetails {
-    flex-direction: column; /* Adjusting layout for smaller screens */
-  }
-
-  .maindetails img {
-    width: 50%; /* Adjusting image size for better responsiveness */
-  }
-
-  .thermometer {
-    width: 70%; /* Adjusting thermometer width for smaller screens */
-  }
-}
