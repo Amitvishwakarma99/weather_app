@@ -33,15 +33,15 @@ async function weather(city) {
     let weather = data.weather[0].main;
 
     if (weather == "Clear") {
-      weatherIcon.src = "../imgs/sun.png";
+      weatherIcon.src = "./imgs/sun.png";
     } else if (weather == "Rain") {
-      weatherIcon.src = "../imgs/rain.png";
+      weatherIcon.src = "./imgs/rain.png";
     } else if (weather == "Clouds") {
-      weatherIcon.src = "../imgs/cloudy.png";
+      weatherIcon.src = "./imgs/cloudy.png";
     } else if (weather == "Drizzle") {
-      weatherIcon.src = "../imgs/fog.png";
+      weatherIcon.src = "./imgs/fog.png";
     } else if (weather == "Mist") {
-      weatherIcon.src = "../imgs/fog.png";
+      weatherIcon.src = "./imgs/fog.png";
     }
     document.querySelector(".weather").style.display = "block";
   } else {
