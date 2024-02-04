@@ -40,7 +40,7 @@ async function weather(city) {
       weatherIcon.src = "./imgs/cloudy.png";
     } else if (weather == "Drizzle") {
       weatherIcon.src = "./imgs/fog.png";
-    } else if (weather == "Mist") {
+    } else if (weather == "Mist" || weather == "Haze") {
       weatherIcon.src = "./imgs/fog.png";
     }
     document.querySelector(".weather").style.display = "block";
