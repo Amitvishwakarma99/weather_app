@@ -13,7 +13,7 @@ searchBtn.addEventListener("click", () => {
 async function weather(city) {
   const response = await fetch(apiUrl + city + apiKey);
   const data = await response.json();
-  // console.log(data);
+  console.log(data);
   if (data.cod != 404) {
     document.querySelector(".error").innerHTML = "";
     document.querySelector(".temprature").innerHTML =

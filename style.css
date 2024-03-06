@@ -4,7 +4,7 @@ body {
   font-family: "Overlock", serif;
   font-size: 16px; /* Adjusting base font size for better readability */
   line-height: 1.6; /* Setting line height for better spacing */
-  background: url(../imgs/1.jpg) no-repeat center center fixed;
+  background: url("./imgs/1.jpg") no-repeat center center fixed;
   background-size: cover;
   color: rgb(255, 255, 255);
   height: 100vh;
